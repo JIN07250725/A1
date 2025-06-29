@@ -137,6 +137,7 @@ BEGIN
     // Step 1: 
     Read Inputs (One per line)
     
+    DISPLAY " Welcome to my Weekly Payroll program!!"
     DISPLAY "Enter your employee ID number (numbers only): "
     DISPLAY "Enter number of hours worked (whole numbers): "
     DISPLAY "Enter the hourly rate: "
@@ -157,6 +158,7 @@ BEGIN
     DISPLAY "Total Gross Pay: $" + total_gross_pay
     DISPLAY "Federal Tax Withholding: $" + federal_tax_withholding
     DISPLAY "Net Pay: $" + net_pay
+    DISPLAY "Thank you for using my Weekly Payroll program!!"
 END
 
 
