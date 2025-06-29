@@ -21,10 +21,10 @@
 
 
 // ------------- DESIGN DOCUMENT -------------
-// A. INPUT [yes/no]: y
-// B. OUTPUT [yes/no]: y
-// C. CALCULATIONS [yes/no]: y
-// D. LOGIC and ALGORITHMS [yes/no]: y
+// A. INPUT [yes/no]: yes
+// B. OUTPUT [yes/no]: yes
+// C. CALCULATIONS [yes/no]: yes
+// D. LOGIC and ALGORITHMS [yes/no]: yes
 //    (Optional) flow chart link or file name: 
 
 
@@ -79,24 +79,6 @@ cout << "Thank you for using my Weekly Payroll program!!" << endl;
 // ------------- DESIGN -------------
 /* 
 
-Read the employee ID number (an int) from the user
-
-Read the number of hours worked (an int) from the user
-
-Read the hourly rate (an int) from the user
-
-Read the federal withholding rate (an int, e.g., 10)
-
-You must read one input per line. Please see the sample run below. This is part of the required coding construct.
-
-Your program should calculate the total gross pay, the Income Tax Withholding, and the net pay.
-
-First calculate the total gross pay from the hours worked and the hourly rate inputs.
-
-Then calculate the Federal Tax withholding using the gross pay and the federal withholding rate.
-
-Then calculate the Net Pay by subtracting the federal tax withholding from the gross pay.
-
 Program Name: Weekly Payroll
 
 Program Description: Calculate pay and taxes
@@ -105,33 +87,42 @@ Design:
 A. INPUT
 Define the input variables including name data type. 
 
-cin >> employee_id_number;
-cin >> number_hours_worked;
-cin >> hourly_rate;
-cin >> federal_withholding_rate;
+Read the employee ID number (an int) from the user
+int employee_id_number= 0;
+
+Read the number of hours worked (an int) from the user
+int number_hours_worked = 0;
+
+Read the hourly rate (an int) from the user
+int hourly_rate = 0;
+
+Read the federal withholding rate (an int, e.g., 10)
+int federal_withholding_rate = 0;
 
 B. OUTPUT
 Define the output variables including data types. 
 
-cout << "Welcome to my Weekly Payroll program!!" << endl;
-cout << "Enter your employee ID number (numbers only): " << endl;
-cout << "Enter number of hours worked (whole numbers): " << endl;
-cout << "Enter the hourly rate: " << endl;
-cout << "Enter the federal withholding rate: " << endl;
-cout << "Your Payroll Summary: " << endl;
-cout << "Total Gross Pay: $" << total_gross_pay << endl;
-cout << "Federal Tax Withholding: $" << federal_tax_withholding << endl;
-cout << "Net Pay: $" << net_pay << endl;
-cout << endl;
-cout << "Thank you for using my Weekly Payroll program!!" << endl;
+Output Total Gross Pay:
+int total_gross_pay = 0;
+
+Output Federal Tax Withholding:
+int federal_tax_withholding = 0;
+
+Output Net Pay:
+int net_pay = 0;
 
 C. CALCULATIONS
 Describe calculations used by algorithms in step D.  
 List all formulas. 
 If there are no calculations needed, state there are no calculations.
 
+calculate total gross pay:
 total_gross_pay = number_hours_worked * hourly_rate
+
+calculate Income Tax Withholding:
 federal_tax_withholding = total_gross_pay * (federal_withholding_rate / 100.0)
+
+calculate net pay:
 net_pay = total_gross_pay - federal_tax_withholding
 
 D. LOGIC and ALGORITHMS
