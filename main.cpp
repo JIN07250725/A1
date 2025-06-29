@@ -130,9 +130,9 @@ Describe calculations used by algorithms in step D.
 List all formulas. 
 If there are no calculations needed, state there are no calculations.
 
-total_gross_pay = number_hours_worked * hourly_rate;
-federal_tax_withholding = total_gross_pay * (federal_withholding_rate / 100.0);
-net_pay = total_gross_pay - federal_tax_withholding;
+total_gross_pay = number_hours_worked * hourly_rate
+federal_tax_withholding = total_gross_pay * (federal_withholding_rate / 100.0)
+net_pay = total_gross_pay - federal_tax_withholding
 
 D. LOGIC and ALGORITHMS
 Design the logic of your program using pseudocode or flowcharts. 
