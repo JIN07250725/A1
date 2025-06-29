@@ -53,6 +53,7 @@ cout << "Enter your employee ID number (numbers only): " << endl;
 cout << "Enter number of hours worked (whole numbers): " << endl;
 cout << "Enter the hourly rate: " << endl;
 cout << "Enter the federal withholding rate: " << endl;
+cout << endl;
 
 cin >> employee_id_number;
 cin >> number_hours_worked;
@@ -115,6 +116,7 @@ C. CALCULATIONS
 Describe calculations used by algorithms in step D.  
 List all formulas. 
 If there are no calculations needed, state there are no calculations.
+Your program should calculate the total gross pay, the Income Tax Withholding, and the net pay.
 
 calculate total gross pay:
 total_gross_pay = number_hours_worked * hourly_rate
@@ -136,15 +138,13 @@ BEGIN
     Read Inputs (One per line)
     
     DISPLAY "Enter your employee ID number (numbers only): "
-    READ employeeID number
-
     DISPLAY "Enter number of hours worked (whole numbers): "
-    READ hours worked
-
     DISPLAY "Enter the hourly rate: "
-    READ hourly rate
-
     DISPLAY "Enter the federal withholding rate: "
+    
+    READ employeeID number    
+    READ hours worked    
+    READ hourly rate    
     READ federal withholding rate
 
     // Step 2: Calculations
